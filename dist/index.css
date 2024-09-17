@@ -1,1 +1,22 @@
-/*# sourceMappingURL=index.css.map */
+:root {
+  --header-bg: mintcream;
+  --main-bg: #d1fae5;
+  --aside-btns: #059669;
+  --card-accent: ;
+}
+
+body {
+  display: flex;
+}
+
+aside, #head-btns button {
+  background-color: var(--aside-btns);
+}
+
+header, .project-card {
+  background-color: var(--header-bg);
+}
+
+main, #search-bar {
+  background-color: var(--main-bg);
+}/*# sourceMappingURL=index.css.map */
