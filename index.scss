@@ -5,10 +5,24 @@
     --main-bg: #d1fae5;
     --aside-btns: #059669;
     --card-accent: ;
+    --txt-light: white;
+    --txt-mid: ;
+    --txt-dark: ;
+
+    --standard-gap: 3.125rem;
+}
+
+* {
+    box-sizing: border-box;
+    line-height: 1.1;
 }
 
 body {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 //colors
@@ -25,11 +39,39 @@ main, #search-bar {
     background-color: var(--main-bg);
 }
 
+aside {
+    color: var(--txt-light);
+}
+
 //aside 
 
 
 //header
 
+header {
+    #search-post {
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+    }
 
+    #post {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 //main
+
+#main-content {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    gap: var(--standard-gap);
+
+    #projects-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: var(--standard-gap);
+    }
+}
+
