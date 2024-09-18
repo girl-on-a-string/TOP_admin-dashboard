@@ -4,7 +4,7 @@
     --header-bg: mintcream;
     --main-bg: #d1fae5;
     --aside-btns: #059669;
-    --card-accent: ;
+    --card-accent: red;
     --txt-light: white;
     --txt-mid: #3f3f46;
     --txt-dark: black;
@@ -80,8 +80,15 @@ header {
             gap: var(--standard-gap);
     
             .project-card {
+                display: flex;
                 padding: var(--card-pad);
                 border-radius: var(--pro-border-rad);
+
+                .stripe {
+                    background-color: var(--card-accent);
+                    width: 3.125rem;
+                    position: absolute;
+                }
 
                 .project-title {
                     font-weight: bold;
@@ -96,10 +103,18 @@ header {
                     display: flex;
                     justify-content: flex-end;
                     padding: var(--card-pad);
+                    margin: 1.25rem 0rem 0rem 0rem;
+                    padding: 0;
+                    
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        margin: .625rem;
 
-                    // ::before {
-                    //     content: "&#xF1567;";
-                    // }
+                        svg {
+                            width: 2.1875rem;
+                        }
+                    }
                 }
             }
         }

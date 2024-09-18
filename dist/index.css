@@ -2,7 +2,7 @@
   --header-bg: mintcream;
   --main-bg: #d1fae5;
   --aside-btns: #059669;
-  --card-accent: ;
+  --card-accent: red;
   --txt-light: white;
   --txt-mid: #3f3f46;
   --txt-dark: black;
@@ -65,8 +65,14 @@ header #post {
   gap: var(--standard-gap);
 }
 #main-content #projects #projects-container .project-card {
+  display: flex;
   padding: var(--card-pad);
   border-radius: var(--pro-border-rad);
+}
+#main-content #projects #projects-container .project-card .stripe {
+  background-color: var(--card-accent);
+  width: 3.125rem;
+  position: absolute;
 }
 #main-content #projects #projects-container .project-card .project-title {
   font-weight: bold;
@@ -79,4 +85,14 @@ header #post {
   display: flex;
   justify-content: flex-end;
   padding: var(--card-pad);
+  margin: 1.25rem 0rem 0rem 0rem;
+  padding: 0;
+}
+#main-content #projects #projects-container .project-card .project-btns button {
+  background-color: transparent;
+  border: none;
+  margin: 0.625rem;
+}
+#main-content #projects #projects-container .project-card .project-btns button svg {
+  width: 2.1875rem;
 }/*# sourceMappingURL=index.css.map */
