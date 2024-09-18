@@ -4,9 +4,11 @@
   --aside-btns: #059669;
   --card-accent: ;
   --txt-light: white;
-  --txt-mid: ;
-  --txt-dark: ;
+  --txt-mid: #3f3f46;
+  --txt-dark: black;
   --standard-gap: 3.125rem;
+  --card-pad: 1.25rem;
+  --pro-border-rad: .625rem;
 }
 
 * {
@@ -20,6 +22,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 aside, #head-btns button {
@@ -52,9 +55,28 @@ header #post {
   grid-template-columns: 6fr 2fr;
   gap: var(--standard-gap);
 }
-#main-content #projects-container {
+#main-content #projects {
+  padding: var(--card-pad);
+}
+#main-content #projects #projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: var(--standard-gap);
+}
+#main-content #projects #projects-container .project-card {
+  padding: var(--card-pad);
+  border-radius: var(--pro-border-rad);
+}
+#main-content #projects #projects-container .project-card .project-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+#main-content #projects #projects-container .project-card .content {
+  color: var(--txt-mid);
+}
+#main-content #projects #projects-container .project-card .project-btns {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--card-pad);
 }/*# sourceMappingURL=index.css.map */
