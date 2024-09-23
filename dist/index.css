@@ -58,7 +58,16 @@ header #search-post {
 }
 header #post {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 5fr 3fr;
+}
+header #post #head-btns button {
+  border: none;
+  border-radius: 1.5625rem;
+  font-weight: bold;
+  color: var(--txt-light);
+  font-size: 1.25rem;
+  width: 8.75rem;
+  padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
 }
 
 #main-content {

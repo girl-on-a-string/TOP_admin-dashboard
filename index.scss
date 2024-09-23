@@ -1,6 +1,4 @@
 :root {
-    // fun fact: this layout is inspired by malachite!
-
     --header-bg: mintcream;
     --main-bg: #E6D5B8;
     --aside-btns: #E45826;
@@ -72,7 +70,19 @@ header {
 
     #post {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 5fr 3fr;
+
+        #head-btns {
+            button {
+                border: none;
+                border-radius: 1.5625rem;
+                font-weight: bold;
+                color: var(--txt-light);
+                font-size: 1.25rem;
+                width: 8.75rem;
+                padding: .9375rem 1.875rem .9375rem 1.875rem;
+            }
+        }
     }
 }
 
