@@ -2,16 +2,18 @@
     // fun fact: this layout is inspired by malachite!
 
     --header-bg: mintcream;
-    --main-bg: #d1fae5;
-    --aside-btns: #059669;
+    --main-bg: #E6D5B8;
+    --aside-btns: #E45826;
     --card-accent: red;
     --txt-light: white;
     --txt-mid: #3f3f46;
-    --txt-dark: black;
+    --txt-dark: 1B1A17;
 
     --standard-gap: 3.125rem;
     --card-pad: 1.25rem;
     --pro-border-rad: .625rem;
+
+    --card-shadow: filter: drop-shadow(9px 13px 8px #000000);
 }
 
 * {
@@ -48,6 +50,17 @@ aside {
 
 //aside 
 
+aside {
+    font-weight: bold;
+
+    #dash {
+        font-size: 1.875rem;
+    }
+
+    svg {
+        width: 2.1875rem; 
+    }
+}
 
 //header
 
