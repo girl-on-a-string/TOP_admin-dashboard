@@ -10,6 +10,7 @@
   --card-pad: 1.25rem;
   --pro-border-rad: .625rem;
   --card-shadow: filter: drop-shadow(9px 13px 8px #000000);
+  --post-pad: .9375rem 1.875rem .9375rem 1.875rem;
 }
 
 * {
@@ -30,7 +31,7 @@ aside, #head-btns button {
   background-color: var(--aside-btns);
 }
 
-header, .project-card {
+header, .project-card, #announcements-container, #trending-container {
   background-color: var(--header-bg);
 }
 
@@ -59,6 +60,7 @@ header #search-post {
 header #post {
   display: grid;
   grid-template-columns: 5fr 3fr;
+  padding: var(--post-pad);
 }
 header #post #head-btns button {
   border: none;
@@ -74,9 +76,14 @@ header #post #head-btns button {
   display: grid;
   grid-template-columns: 6fr 2fr;
   gap: var(--standard-gap);
-}
-#main-content #projects {
   padding: var(--card-pad);
+}
+#main-content #announcements-container, #main-content #trending-container, #main-content .project-card {
+  padding: var(--card-pad);
+  border-radius: var(--pro-border-rad);
+}
+#main-content h2, #main-content h3, #main-content h4 {
+  font-size: 1.5625rem;
 }
 #main-content #projects #projects-container {
   display: grid;
@@ -115,4 +122,7 @@ header #post #head-btns button {
 }
 #main-content #projects #projects-container .project-card .project-btns button svg {
   width: 2.1875rem;
+}
+#main-content #announcements #announcements-container .announcements-item .announcements-title {
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */

@@ -12,6 +12,7 @@
     --pro-border-rad: .625rem;
 
     --card-shadow: filter: drop-shadow(9px 13px 8px #000000);
+    --post-pad: .9375rem 1.875rem .9375rem 1.875rem;
 }
 
 * {
@@ -34,7 +35,7 @@ aside, #head-btns button {
     background-color: var(--aside-btns);
 }
 
-header, .project-card {
+header, .project-card, #announcements-container, #trending-container {
     background-color: var(--header-bg);
 }
 
@@ -71,6 +72,7 @@ header {
     #post {
         display: grid;
         grid-template-columns: 5fr 3fr;
+        padding: var(--post-pad);
 
         #head-btns {
             button {
@@ -92,10 +94,18 @@ header {
     display: grid;
     grid-template-columns: 6fr 2fr;
     gap: var(--standard-gap);
+    padding: var(--card-pad);
+
+    #announcements-container, #trending-container, .project-card {
+        padding: var(--card-pad);
+        border-radius: var(--pro-border-rad);
+    }
+
+    h2, h3, h4 {
+        font-size: 1.5625rem;
+    }
 
     #projects {
-        padding: var(--card-pad);
-
         #projects-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -138,6 +148,16 @@ header {
                             width: 2.1875rem;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    #announcements {
+        #announcements-container {
+            .announcements-item {
+                .announcements-title {
+                    font-weight: bold;
                 }
             }
         }
