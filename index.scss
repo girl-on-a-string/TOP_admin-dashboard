@@ -17,7 +17,6 @@
 
 * {
     box-sizing: border-box;
-    line-height: 1.1;
 }
 
 body {
@@ -154,10 +153,21 @@ header {
     }
 
     #announcements {
+        hr {
+            border-color: var(--txt-mid);
+            margin: 1.25rem 0px 1.25rem 0px;
+        }
+
         #announcements-container {
-            .announcements-item {
-                .announcements-title {
+            .announcement-item {
+                .announcement-title {
                     font-weight: bold;
+                }
+
+                .announcement-content {
+                    margin: .3125rem 0px .3125rem 0px;
+                    color: var(--txt-mid);
+                    font-size: .9375rem;
                 }
             }
         }

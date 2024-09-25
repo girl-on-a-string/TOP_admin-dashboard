@@ -15,7 +15,6 @@
 
 * {
   box-sizing: border-box;
-  line-height: 1.1;
 }
 
 body {
@@ -123,6 +122,15 @@ header #post #head-btns button {
 #main-content #projects #projects-container .project-card .project-btns button svg {
   width: 2.1875rem;
 }
-#main-content #announcements #announcements-container .announcements-item .announcements-title {
+#main-content #announcements hr {
+  border-color: var(--txt-mid);
+  margin: 1.25rem 0px 1.25rem 0px;
+}
+#main-content #announcements #announcements-container .announcement-item .announcement-title {
   font-weight: bold;
+}
+#main-content #announcements #announcements-container .announcement-item .announcement-content {
+  margin: 0.3125rem 0px 0.3125rem 0px;
+  color: var(--txt-mid);
+  font-size: 0.9375rem;
 }/*# sourceMappingURL=index.css.map */
