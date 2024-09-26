@@ -42,6 +42,19 @@ aside {
   color: var(--txt-light);
 }
 
+.pfp, #user-pfp {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg);
+  border-radius: 100%;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+#user-pfp {
+  width: 100px;
+  height: 100px;
+}
+
 aside {
   font-weight: bold;
 }
@@ -57,8 +70,6 @@ header #search-post {
   grid-template-columns: 5fr 3fr;
 }
 header #post {
-  display: grid;
-  grid-template-columns: 5fr 3fr;
   padding: var(--post-pad);
 }
 header #post #head-btns button {
@@ -133,4 +144,11 @@ header #post #head-btns button {
   margin: 0.3125rem 0px 0.3125rem 0px;
   color: var(--txt-mid);
   font-size: 0.9375rem;
+}
+#main-content #trending #trending-container .user-card .user-card-txt {
+  display: flex;
+  flex-direction: column;
+}
+#main-content #trending #trending-container .user-card .user-card-txt .user-desc {
+  color: var(--txt-mid);
 }/*# sourceMappingURL=index.css.map */
