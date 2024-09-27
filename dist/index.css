@@ -70,6 +70,13 @@ header #search-post {
   display: grid;
   grid-template-columns: 5fr 3fr;
 }
+header #search-post #search input#search-bar {
+  width: 75%;
+  border: none;
+}
+header #profile span {
+  font-weight: bold;
+}
 header #post {
   padding: var(--post-pad);
 }

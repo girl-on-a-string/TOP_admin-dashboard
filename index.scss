@@ -82,6 +82,19 @@ header {
     #search-post {
         display: grid;
         grid-template-columns: 5fr 3fr;
+
+        #search {
+            input#search-bar {
+                width: 75%;
+                border: none;
+            }
+        }
+    }
+
+    #profile {
+        span {
+            font-weight: bold;
+        }
     }
 
     #post {
