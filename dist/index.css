@@ -105,7 +105,7 @@ header #post #head-btns button {
 }
 #main-content #projects #projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: var(--standard-gap);
 }
