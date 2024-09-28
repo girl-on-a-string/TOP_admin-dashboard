@@ -9,7 +9,7 @@
   --standard-gap: 3.125rem;
   --card-pad: 1.25rem;
   --pro-border-rad: .625rem;
-  --card-shadow: filter: drop-shadow(9px 13px 8px #000000);
+  --card-shadow: 9px 13px 8px #00000050;
   --post-pad: .9375rem 1.875rem .9375rem 1.875rem;
 }
 
@@ -66,12 +66,20 @@ aside svg {
   width: 2.1875rem;
 }
 
+header {
+  padding: var(--card-pad);
+}
 header #search-post {
   display: grid;
   grid-template-columns: 5fr 3fr;
 }
+header #search-post #search svg {
+  width: 1.875rem;
+}
 header #search-post #search input#search-bar {
   width: 75%;
+  height: 1.875rem;
+  border-radius: 1.875rem;
   border: none;
 }
 header #profile span {
@@ -90,6 +98,10 @@ header #post #head-btns button {
   padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
 }
 
+#announcements-container, .project-card, #trending-container {
+  box-shadow: var(--card-shadow);
+}
+
 #main-content {
   display: grid;
   grid-template-columns: 6fr 2fr;
@@ -103,11 +115,16 @@ header #post #head-btns button {
 #main-content h2, #main-content h3, #main-content h4 {
   font-size: 1.5625rem;
 }
+#main-content #projects {
+  height: 100%;
+}
 #main-content #projects #projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: var(--standard-gap);
+  height: -moz-max-content;
+  height: max-content;
 }
 #main-content #projects #projects-container .project-card {
   display: flex;

@@ -11,7 +11,7 @@
     --card-pad: 1.25rem;
     --pro-border-rad: .625rem;
 
-    --card-shadow: filter: drop-shadow(9px 13px 8px #000000);
+    --card-shadow: 9px 13px 8px #00000050;
     --post-pad: .9375rem 1.875rem .9375rem 1.875rem;
 }
 
@@ -79,13 +79,21 @@ aside {
 //header
 
 header {
+    padding: var(--card-pad);
+
     #search-post {
         display: grid;
         grid-template-columns: 5fr 3fr;
 
         #search {
+            svg {
+                width: 1.875rem;
+            }
+
             input#search-bar {
                 width: 75%;
+                height: 1.875rem;
+                border-radius: 1.875rem;
                 border: none;
             }
         }
@@ -118,6 +126,10 @@ header {
 
 //main
 
+#announcements-container, .project-card, #trending-container {
+    box-shadow: var(--card-shadow);
+}
+
 #main-content {
     display: grid;
     grid-template-columns: 6fr 2fr;
@@ -134,12 +146,15 @@ header {
     }
 
     #projects {
+        height: 100%;
+
         #projects-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
             gap: var(--standard-gap);
-    
+            height: max-content;
+
             .project-card {
                 display: flex;
                 padding: var(--card-pad);
