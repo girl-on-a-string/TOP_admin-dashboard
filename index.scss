@@ -66,13 +66,35 @@ aside {
 
 aside {
     font-weight: bold;
+    padding: var(--card-pad);
 
     #dash {
         font-size: 1.875rem;
+        display: flex;
+        align-items: center;
+
+        span {
+            margin: .625rem;
+        }
     }
 
     svg {
         width: 2.1875rem; 
+    }
+
+    #options {
+        #group-one, #group-two {
+            div {
+                display: flex;
+                align-items: center;
+                margin: .625rem;
+
+                span {
+                    margin: .625rem;
+                    font-size: 1.25rem;
+                }
+            }
+        }
     }
 }
 

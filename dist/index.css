@@ -58,12 +58,27 @@ aside {
 
 aside {
   font-weight: bold;
+  padding: var(--card-pad);
 }
 aside #dash {
   font-size: 1.875rem;
+  display: flex;
+  align-items: center;
+}
+aside #dash span {
+  margin: 0.625rem;
 }
 aside svg {
   width: 2.1875rem;
+}
+aside #options #group-one div, aside #options #group-two div {
+  display: flex;
+  align-items: center;
+  margin: 0.625rem;
+}
+aside #options #group-one div span, aside #options #group-two div span {
+  margin: 0.625rem;
+  font-size: 1.25rem;
 }
 
 header {
