@@ -81,14 +81,18 @@ aside {
 header {
     padding: var(--card-pad);
 
+    svg {
+        width: 1.875rem;
+        margin: 1.25rem;
+    }
+
     #search-post {
         display: grid;
         grid-template-columns: 5fr 3fr;
 
         #search {
-            svg {
-                width: 1.875rem;
-            }
+            display: flex;
+            align-items: center;
 
             input#search-bar {
                 width: 75%;
@@ -100,8 +104,14 @@ header {
     }
 
     #profile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
         span {
             font-weight: bold;
+            font-size: 1.5625rem;
+            margin: 15px;
         }
     }
 

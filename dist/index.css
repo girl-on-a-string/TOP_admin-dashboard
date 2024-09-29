@@ -69,12 +69,17 @@ aside svg {
 header {
   padding: var(--card-pad);
 }
+header svg {
+  width: 1.875rem;
+  margin: 1.25rem;
+}
 header #search-post {
   display: grid;
   grid-template-columns: 5fr 3fr;
 }
-header #search-post #search svg {
-  width: 1.875rem;
+header #search-post #search {
+  display: flex;
+  align-items: center;
 }
 header #search-post #search input#search-bar {
   width: 75%;
@@ -82,8 +87,15 @@ header #search-post #search input#search-bar {
   border-radius: 1.875rem;
   border: none;
 }
+header #profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 header #profile span {
   font-weight: bold;
+  font-size: 1.5625rem;
+  margin: 15px;
 }
 header #post {
   padding: var(--post-pad);
