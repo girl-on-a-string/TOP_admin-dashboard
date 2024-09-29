@@ -80,6 +80,7 @@ aside {
 
 header {
     padding: var(--card-pad);
+    box-shadow: 0rem .75rem .9375rem #00000050;
 
     svg {
         width: 1.875rem;
@@ -118,7 +119,24 @@ header {
     #post {
         // display: grid;
         // grid-template-columns: 5fr 3fr;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: var(--post-pad);
+
+        #greeting {
+            display: flex;
+            align-items: center;
+
+            h1 {
+                display: flex;
+                flex-direction: column;
+    
+                :first-child {
+                    font-size: 1rem;
+                }
+            }
+        }
 
         #head-btns {
             button {
@@ -129,6 +147,7 @@ header {
                 font-size: 1.25rem;
                 width: 8.75rem;
                 padding: .9375rem 1.875rem .9375rem 1.875rem;
+                margin: .625rem;
             }
         }
     }
